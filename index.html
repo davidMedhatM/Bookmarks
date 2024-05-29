@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/images.png">
+  <title>Bookmarks</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="display-2 text-center mt-3 fw-bold">Bookmarks</h1>
+    <hr class="my-3 ">
+
+    <h2 class="display-4 text-center fw-bold"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+        class="fa-solid fa-bookmark"></i></h2>
+    <div class="form">
+      <div class="py-2">
+        <label class="mb-3 fw-bold" for="siteName"><i class="fa-solid fa-book-medical"></i> Site Name :</label>
+        <input oninput="validate(this)" type="text" class="form-control" id="siteName">
+        <div class="alert alert-danger d-none" role="alert">
+           you must write the domain name like this google.com
+        </div>
+      </div>
+      <div class="py-2">
+        <label class="mb-3 fw-bold" for="siteURL"><i class="fa-regular fa-bookmark"></i> Site URL :</label>
+        <input oninput="validate(this)" type="text" class="form-control" id="siteURL">
+        <div class="alert alert-danger d-none" role="alert">
+          you must write the URL like this https://www.google.com/
+       </div>
+      </div>
+        <button id="submitbtn" class="w-100 d-none  btn btn-outline-secondary btn-lg mx-auto " onclick="addProduct()">Submit</button>
+      <hr class="my-3">
+    </div>
+    <div class="view">
+      <table class="table table-success table-striped table-bordered ">
+        <thead class="text-center">
+          <tr>
+            <th>index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

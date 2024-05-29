@@ -1,0 +1,14 @@
+body {
+    background-color: beige;
+}
+
+hr {
+    border-top: 2px dashed red;
+}
+
+h2 {
+    font-size: 72px;
+    background: linear-gradient(to right, rgba(23, 8, 32, 1) 0%, rgba(9, 9, 121, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
