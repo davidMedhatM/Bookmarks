@@ -75,13 +75,14 @@ function validate(element) {
     } else {
         element.classList.add('is-invalid');
         element.classList.remove('is-valid');
-        submitbtn.classList.replace('d-block','d-none');
+        element.nextElementSibling.classList.replace('d-none','d-block');
+
         console.log("false");
     }
 
     if (regex['siteURL'].test(siteURL.value) && regex['siteName'].test(siteName.value)) {
         submitbtn.classList.replace('d-none','d-block');
     } else {
-        element.nextElementSibling.classList.replace('d-none','d-block');
+        submitbtn.classList.replace('d-block','d-none');
     }
 }
